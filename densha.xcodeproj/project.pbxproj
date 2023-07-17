@@ -14,6 +14,11 @@
 		55CD33CA2A65C47E00FFE2B7 /* denshaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD33C92A65C47E00FFE2B7 /* denshaTests.swift */; };
 		55CD33D42A65C47E00FFE2B7 /* denshaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD33D32A65C47E00FFE2B7 /* denshaUITests.swift */; };
 		55CD33D62A65C47E00FFE2B7 /* denshaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD33D52A65C47E00FFE2B7 /* denshaUITestsLaunchTests.swift */; };
+		55CD33E32A65C4B400FFE2B7 /* TrainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD33E22A65C4B400FFE2B7 /* TrainData.swift */; };
+		55CD33E62A65C54F00FFE2B7 /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 55CD33E52A65C54F00FFE2B7 /* CodableCSV */; };
+		55CD33E92A65CF8C00FFE2B7 /* speed_tracker_15_Jul_2023_14_41_27.csv in Resources */ = {isa = PBXBuildFile; fileRef = 55CD33E72A65CF8B00FFE2B7 /* speed_tracker_15_Jul_2023_14_41_27.csv */; };
+		55CD33EA2A65CF8C00FFE2B7 /* speed_tracker_30_Jun_2023_16_47_04.csv in Resources */ = {isa = PBXBuildFile; fileRef = 55CD33E82A65CF8B00FFE2B7 /* speed_tracker_30_Jun_2023_16_47_04.csv */; };
+		55CD33EC2A65DA9800FFE2B7 /* selectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CD33EB2A65DA9800FFE2B7 /* selectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,10 @@
 		55CD33CF2A65C47E00FFE2B7 /* denshaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = denshaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CD33D32A65C47E00FFE2B7 /* denshaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = denshaUITests.swift; sourceTree = "<group>"; };
 		55CD33D52A65C47E00FFE2B7 /* denshaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = denshaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55CD33E22A65C4B400FFE2B7 /* TrainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainData.swift; sourceTree = "<group>"; };
+		55CD33E72A65CF8B00FFE2B7 /* speed_tracker_15_Jul_2023_14_41_27.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = speed_tracker_15_Jul_2023_14_41_27.csv; sourceTree = "<group>"; };
+		55CD33E82A65CF8B00FFE2B7 /* speed_tracker_30_Jun_2023_16_47_04.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = speed_tracker_30_Jun_2023_16_47_04.csv; sourceTree = "<group>"; };
+		55CD33EB2A65DA9800FFE2B7 /* selectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CD33E62A65C54F00FFE2B7 /* CodableCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +106,11 @@
 			children = (
 				55CD33B82A65C47D00FFE2B7 /* denshaApp.swift */,
 				55CD33BA2A65C47D00FFE2B7 /* ContentView.swift */,
+				55CD33E22A65C4B400FFE2B7 /* TrainData.swift */,
+				55CD33EB2A65DA9800FFE2B7 /* selectionView.swift */,
 				55CD33BC2A65C47E00FFE2B7 /* Assets.xcassets */,
+				55CD33E72A65CF8B00FFE2B7 /* speed_tracker_15_Jul_2023_14_41_27.csv */,
+				55CD33E82A65CF8B00FFE2B7 /* speed_tracker_30_Jun_2023_16_47_04.csv */,
 				55CD33BE2A65C47E00FFE2B7 /* Preview Content */,
 			);
 			path = densha;
@@ -143,6 +157,9 @@
 			dependencies = (
 			);
 			name = densha;
+			packageProductDependencies = (
+				55CD33E52A65C54F00FFE2B7 /* CodableCSV */,
+			);
 			productName = densha;
 			productReference = 55CD33B52A65C47D00FFE2B7 /* densha.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = 55CD33AC2A65C47D00FFE2B7;
+			packageReferences = (
+				55CD33E42A65C54F00FFE2B7 /* XCRemoteSwiftPackageReference "CodableCSV" */,
+			);
 			productRefGroup = 55CD33B62A65C47D00FFE2B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,7 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CD33C02A65C47E00FFE2B7 /* Preview Assets.xcassets in Resources */,
+				55CD33E92A65CF8C00FFE2B7 /* speed_tracker_15_Jul_2023_14_41_27.csv in Resources */,
 				55CD33BD2A65C47E00FFE2B7 /* Assets.xcassets in Resources */,
+				55CD33EA2A65CF8C00FFE2B7 /* speed_tracker_30_Jun_2023_16_47_04.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +281,8 @@
 			files = (
 				55CD33BB2A65C47D00FFE2B7 /* ContentView.swift in Sources */,
 				55CD33B92A65C47D00FFE2B7 /* denshaApp.swift in Sources */,
+				55CD33E32A65C4B400FFE2B7 /* TrainData.swift in Sources */,
+				55CD33EC2A65DA9800FFE2B7 /* selectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +606,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55CD33E42A65C54F00FFE2B7 /* XCRemoteSwiftPackageReference "CodableCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dehesa/CodableCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55CD33E52A65C54F00FFE2B7 /* CodableCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55CD33E42A65C54F00FFE2B7 /* XCRemoteSwiftPackageReference "CodableCSV" */;
+			productName = CodableCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55CD33AD2A65C47D00FFE2B7 /* Project object */;
 }
